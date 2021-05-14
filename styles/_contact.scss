@@ -76,12 +76,18 @@
         #email {
           @extend %inputs;
           margin: 2rem 0rem;
+          &::placeholder {
+            color: black;
+          }
         }
         #text-area {
           @extend %inputs;
           border-radius: 0;
           font-family: "Poppins", sans-serif;
           font-weight: 400;
+          &::placeholder {
+            color: black;
+          }
         }
         p {
           color: $white;
@@ -99,8 +105,14 @@
           padding: 1rem 4rem;
           border-radius: 10rem;
           outline: none;
+          border: none;
           cursor: pointer;
           margin: 2rem 0rem;
+          transition: all 0.5s linear;
+          &:hover {
+            background-color: $primary-color;
+            color: $white;
+          }
         }
       }
     }
